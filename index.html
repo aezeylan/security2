@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Security 2 | Encrypt</title>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title">Encryption & Decryption</h3>
+  </div>
+  <div class="panel-body">
+      <form method="post" action="encrypt.php">
+            <div class="form-group">
+                <label for="username">Gebruikersnaam: </label>
+                <input type="text" class="form-control" id="username" name="username" placeholder="Gebruikersnaam">
+            </div>
+            <div class="form-group">
+                <label for="password">Wachtwoord: </label>
+                <input type="password" class="form-control" id="password" name="password" placeholder="Wachtwoord">
+            </div>
+            <div class="form-group">
+                <label for="message">Bericht: </label>
+                <textarea id="message" name="message" class="form-control" rows="3"></textarea>
+                <p class="help-block">Geen Bericht = Decryption</p>
+            </div>
+            <input class="btn btn-default" type="submit" value="Verstuur" name="submit"/>
+        </form>
+  </div>
+</div>
+
+</body>
+</html>
